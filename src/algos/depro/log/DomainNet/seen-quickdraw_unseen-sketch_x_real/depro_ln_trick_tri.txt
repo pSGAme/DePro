@@ -1,0 +1,267 @@
+================Parameters Settings=================
+Parameters:	Namespace(vptNumTokens=4, text='DCoOp', textNumTokens=1, VL_independent=True, generator_layer=2, domain_specific_trick=False, decouple=True, triplet=True, ln_trick=True, log_name='depro_ln_trick_tri', disable_first_pre_ln=False, second_init='xavier', first_init='xavier', optimizer='adam', l2_reg=0.0, epochs=1, lr=0.0001, momentum=0.9, resume_dict=None, code_path='/home/user/Code/DePro_SIGIR', dataset_path='/data/UCDR/data', dataset='DomainNet', is_eccv_split=1, clip_backbone='ViT-B/32', CLS_NUM_TOKENS=300, DOM_NUM_TOKENS=5, debug_mode=0, dropout=0.5, seen_domain='quickdraw', holdout_domain='sketch', gallery_domain='real', include_auxillary_domains=1, udcdr=0, image_size=224, seed=0, batch_size=60, num_workers=6, early_stop=2, log_interval=100)
+----------------Training Settings-------------------
+lr = 0.0001
+batch_size = 60
+---------------- Universal Domain Prompts Settings ----------------
+visual UDP number = 4
+text prompt-setup = DCoOp
+text UDP number= 1
+UDPs independent? = True
+---------------- Class Prompts Settings ----------------
+Meta-Net used? = True
+Meta-Net layer depth = 2
+---------------- Decouple loss Settings ----------------
+Decouple used? = True
+---------------- Trick&Loss Settings ----------------
+LN Trick used? = True
+vit out_order = 0
+use triplet loss? = True
+==================================================
+======== Training Parameters ========
+text_prompt_learner.ctx
+text_encoder.text_projection
+ln:  text_encoder.transformer.resblocks.0.ln_1.weight
+ln:  text_encoder.transformer.resblocks.0.ln_1.bias
+ln:  text_encoder.transformer.resblocks.0.ln_2.weight
+ln:  text_encoder.transformer.resblocks.0.ln_2.bias
+ln:  text_encoder.transformer.resblocks.1.ln_1.weight
+ln:  text_encoder.transformer.resblocks.1.ln_1.bias
+ln:  text_encoder.transformer.resblocks.1.ln_2.weight
+ln:  text_encoder.transformer.resblocks.1.ln_2.bias
+ln:  text_encoder.transformer.resblocks.2.ln_1.weight
+ln:  text_encoder.transformer.resblocks.2.ln_1.bias
+ln:  text_encoder.transformer.resblocks.2.ln_2.weight
+ln:  text_encoder.transformer.resblocks.2.ln_2.bias
+ln:  text_encoder.transformer.resblocks.3.ln_1.weight
+ln:  text_encoder.transformer.resblocks.3.ln_1.bias
+ln:  text_encoder.transformer.resblocks.3.ln_2.weight
+ln:  text_encoder.transformer.resblocks.3.ln_2.bias
+ln:  text_encoder.transformer.resblocks.4.ln_1.weight
+ln:  text_encoder.transformer.resblocks.4.ln_1.bias
+ln:  text_encoder.transformer.resblocks.4.ln_2.weight
+ln:  text_encoder.transformer.resblocks.4.ln_2.bias
+ln:  text_encoder.transformer.resblocks.5.ln_1.weight
+ln:  text_encoder.transformer.resblocks.5.ln_1.bias
+ln:  text_encoder.transformer.resblocks.5.ln_2.weight
+ln:  text_encoder.transformer.resblocks.5.ln_2.bias
+ln:  text_encoder.transformer.resblocks.6.ln_1.weight
+ln:  text_encoder.transformer.resblocks.6.ln_1.bias
+ln:  text_encoder.transformer.resblocks.6.ln_2.weight
+ln:  text_encoder.transformer.resblocks.6.ln_2.bias
+ln:  text_encoder.transformer.resblocks.7.ln_1.weight
+ln:  text_encoder.transformer.resblocks.7.ln_1.bias
+ln:  text_encoder.transformer.resblocks.7.ln_2.weight
+ln:  text_encoder.transformer.resblocks.7.ln_2.bias
+ln:  text_encoder.transformer.resblocks.8.ln_1.weight
+ln:  text_encoder.transformer.resblocks.8.ln_1.bias
+ln:  text_encoder.transformer.resblocks.8.ln_2.weight
+ln:  text_encoder.transformer.resblocks.8.ln_2.bias
+ln:  text_encoder.transformer.resblocks.9.ln_1.weight
+ln:  text_encoder.transformer.resblocks.9.ln_1.bias
+ln:  text_encoder.transformer.resblocks.9.ln_2.weight
+ln:  text_encoder.transformer.resblocks.9.ln_2.bias
+ln:  text_encoder.transformer.resblocks.10.ln_1.weight
+ln:  text_encoder.transformer.resblocks.10.ln_1.bias
+ln:  text_encoder.transformer.resblocks.10.ln_2.weight
+ln:  text_encoder.transformer.resblocks.10.ln_2.bias
+ln:  text_encoder.transformer.resblocks.11.ln_1.weight
+ln:  text_encoder.transformer.resblocks.11.ln_1.bias
+ln:  text_encoder.transformer.resblocks.11.ln_2.weight
+ln:  text_encoder.transformer.resblocks.11.ln_2.bias
+ln:  text_encoder.ln_final.weight
+ln:  text_encoder.ln_final.bias
+visual_udp_generator.prompt_embeddings
+visual_encoder.class_embedding
+visual_encoder.proj
+visual_encoder.prompt_embeddings
+ln:  visual_encoder.ln_pre.weight
+ln:  visual_encoder.ln_pre.bias
+ln:  visual_encoder.transformer.resblocks.0.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.0.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.0.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.0.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.1.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.1.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.1.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.1.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.2.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.2.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.2.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.2.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.3.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.3.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.3.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.3.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.4.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.4.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.4.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.4.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.5.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.5.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.5.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.5.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.6.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.6.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.6.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.6.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.7.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.7.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.7.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.7.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.8.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.8.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.8.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.8.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.9.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.9.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.9.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.9.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.10.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.10.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.10.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.10.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.11.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.11.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.11.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.11.ln_2.bias
+ln:  visual_encoder.ln_post.weight
+ln:  visual_encoder.ln_post.bias
+visual_encoder.meta_net.proj
+visual_encoder.meta_net.specific_domain_prompts
+visual_encoder.meta_net.specific_class_prompts
+visual_encoder.meta_net.vit.class_embedding
+visual_encoder.meta_net.vit.positional_embedding
+visual_encoder.meta_net.vit.proj
+visual_encoder.meta_net.vit.conv1.weight
+ln:  visual_encoder.meta_net.vit.ln_pre.weight
+ln:  visual_encoder.meta_net.vit.ln_pre.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.in_proj_weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.in_proj_bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.out_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.out_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_1.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_1.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_fc.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_fc.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_2.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_2.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.in_proj_weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.in_proj_bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.out_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.out_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_1.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_1.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_fc.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_fc.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_2.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_2.bias
+ln:  visual_encoder.meta_net.vit.ln_post.weight
+ln:  visual_encoder.meta_net.vit.ln_post.bias
+tot=143781632, train = 18522880
+===============================================
+[Train] Epoch: [1/1][100/3536]  Time 0.398 (0.416)  cls 7.4777 (8.6082)  triplet 1.4759 (1.4595)  mse 0.0001 (0.0001)  tot 8.9535 (10.0678)  
+[Train] Epoch: [1/1][200/3536]  Time 0.411 (0.420)  cls 6.0400 (7.7212)  triplet 1.4285 (1.4578)  mse 0.0000 (0.0001)  tot 7.4685 (9.1790)  
+[Train] Epoch: [1/1][300/3536]  Time 0.401 (0.416)  cls 5.5453 (7.2185)  triplet 1.3705 (1.4497)  mse 0.0000 (0.0001)  tot 6.9159 (8.6681)  
+[Train] Epoch: [1/1][400/3536]  Time 0.397 (0.412)  cls 5.0957 (6.8939)  triplet 1.4384 (1.4455)  mse 0.0000 (0.0001)  tot 6.5342 (8.3394)  
+[Train] Epoch: [1/1][500/3536]  Time 0.401 (0.410)  cls 4.9920 (6.6614)  triplet 1.2991 (1.4401)  mse 0.0000 (0.0001)  tot 6.2911 (8.1015)  
+[Train] Epoch: [1/1][600/3536]  Time 0.402 (0.409)  cls 4.8208 (6.4896)  triplet 1.4834 (1.4354)  mse 0.0000 (0.0000)  tot 6.3042 (7.9249)  
+[Train] Epoch: [1/1][700/3536]  Time 0.405 (0.408)  cls 6.0447 (6.3409)  triplet 1.5193 (1.4296)  mse 0.0000 (0.0000)  tot 7.5640 (7.7705)  
+[Train] Epoch: [1/1][800/3536]  Time 0.398 (0.407)  cls 5.3802 (6.2129)  triplet 1.3368 (1.4270)  mse 0.0000 (0.0000)  tot 6.7170 (7.6399)  
+[Train] Epoch: [1/1][900/3536]  Time 0.399 (0.406)  cls 5.0845 (6.0988)  triplet 1.3777 (1.4240)  mse 0.0000 (0.0000)  tot 6.4622 (7.5228)  
+[Train] Epoch: [1/1][1000/3536]  Time 0.398 (0.406)  cls 4.4266 (6.0045)  triplet 1.3601 (1.4198)  mse 0.0000 (0.0000)  tot 5.7867 (7.4243)  
+[Train] Epoch: [1/1][1100/3536]  Time 0.398 (0.405)  cls 4.9348 (5.9331)  triplet 1.3712 (1.4176)  mse 0.0000 (0.0000)  tot 6.3061 (7.3507)  
+[Train] Epoch: [1/1][1200/3536]  Time 0.398 (0.404)  cls 4.9773 (5.8902)  triplet 1.3350 (1.4168)  mse 0.0000 (0.0000)  tot 6.3124 (7.3071)  
+[Train] Epoch: [1/1][1300/3536]  Time 0.399 (0.404)  cls 5.2925 (5.8482)  triplet 1.3848 (1.4163)  mse 0.0000 (0.0000)  tot 6.6773 (7.2646)  
+[Train] Epoch: [1/1][1400/3536]  Time 0.399 (0.404)  cls 4.6926 (5.8056)  triplet 1.4633 (1.4161)  mse 0.0000 (0.0000)  tot 6.1559 (7.2217)  
+[Train] Epoch: [1/1][1500/3536]  Time 0.396 (0.403)  cls 4.9683 (5.7741)  triplet 1.4166 (1.4166)  mse 0.0000 (0.0000)  tot 6.3849 (7.1907)  
+[Train] Epoch: [1/1][1600/3536]  Time 0.399 (0.403)  cls 4.7307 (5.7409)  triplet 1.4283 (1.4152)  mse 0.0000 (0.0000)  tot 6.1591 (7.1561)  
+[Train] Epoch: [1/1][1700/3536]  Time 0.399 (0.403)  cls 4.7321 (5.7194)  triplet 1.2686 (1.4158)  mse 0.0000 (0.0000)  tot 6.0007 (7.1353)  
+[Train] Epoch: [1/1][1800/3536]  Time 0.399 (0.402)  cls 5.4813 (5.7007)  triplet 1.5817 (1.4162)  mse 0.0000 (0.0000)  tot 7.0630 (7.1169)  
+[Train] Epoch: [1/1][1900/3536]  Time 0.398 (0.402)  cls 5.4459 (5.6844)  triplet 1.4984 (1.4179)  mse 0.0000 (0.0000)  tot 6.9443 (7.1023)  
+[Train] Epoch: [1/1][2000/3536]  Time 0.397 (0.402)  cls 5.3613 (5.6667)  triplet 1.4272 (1.4184)  mse 0.0000 (0.0000)  tot 6.7885 (7.0851)  
+[Train] Epoch: [1/1][2100/3536]  Time 0.399 (0.402)  cls 5.3089 (5.6547)  triplet 1.3342 (1.4197)  mse 0.0000 (0.0000)  tot 6.6431 (7.0745)  
+[Train] Epoch: [1/1][2200/3536]  Time 0.397 (0.402)  cls 4.9050 (5.6370)  triplet 1.4902 (1.4203)  mse 0.0000 (0.0000)  tot 6.3951 (7.0573)  
+[Train] Epoch: [1/1][2300/3536]  Time 0.397 (0.402)  cls 5.0899 (5.6202)  triplet 1.5022 (1.4208)  mse 0.0000 (0.0000)  tot 6.5922 (7.0410)  
+[Train] Epoch: [1/1][2400/3536]  Time 0.399 (0.401)  cls 5.3598 (5.6047)  triplet 1.5759 (1.4215)  mse 0.0000 (0.0000)  tot 6.9357 (7.0262)  
+[Train] Epoch: [1/1][2500/3536]  Time 0.398 (0.401)  cls 5.1868 (5.5876)  triplet 1.3608 (1.4225)  mse 0.0000 (0.0000)  tot 6.5476 (7.0101)  
+[Train] Epoch: [1/1][2600/3536]  Time 0.405 (0.401)  cls 5.9033 (5.5710)  triplet 1.5210 (1.4232)  mse 0.0000 (0.0000)  tot 7.4243 (6.9942)  
+[Train] Epoch: [1/1][2700/3536]  Time 0.397 (0.401)  cls 4.4421 (5.5519)  triplet 1.3892 (1.4229)  mse 0.0000 (0.0000)  tot 5.8313 (6.9748)  
+[Train] Epoch: [1/1][2800/3536]  Time 0.401 (0.401)  cls 4.9655 (5.5338)  triplet 1.4225 (1.4222)  mse 0.0000 (0.0000)  tot 6.3880 (6.9561)  
+[Train] Epoch: [1/1][2900/3536]  Time 0.396 (0.401)  cls 4.7800 (5.5151)  triplet 1.4393 (1.4228)  mse 0.0000 (0.0000)  tot 6.2193 (6.9380)  
+[Train] Epoch: [1/1][3000/3536]  Time 0.399 (0.401)  cls 4.6308 (5.4988)  triplet 1.3121 (1.4230)  mse 0.0000 (0.0000)  tot 5.9429 (6.9218)  
+[Train] Epoch: [1/1][3100/3536]  Time 0.398 (0.401)  cls 4.5948 (5.4828)  triplet 1.4653 (1.4233)  mse 0.0000 (0.0000)  tot 6.0601 (6.9060)  
+[Train] Epoch: [1/1][3200/3536]  Time 0.397 (0.401)  cls 4.2351 (5.4668)  triplet 1.4679 (1.4230)  mse 0.0000 (0.0000)  tot 5.7030 (6.8898)  
+[Train] Epoch: [1/1][3300/3536]  Time 0.396 (0.401)  cls 4.6862 (5.4511)  triplet 1.4221 (1.4226)  mse 0.0000 (0.0000)  tot 6.1083 (6.8737)  
+[Train] Epoch: [1/1][3400/3536]  Time 0.399 (0.401)  cls 5.6170 (5.4380)  triplet 1.6640 (1.4227)  mse 0.0000 (0.0000)  tot 7.2810 (6.8607)  
+[Train] Epoch: [1/1][3500/3536]  Time 0.398 (0.400)  cls 4.2736 (5.4242)  triplet 1.2934 (1.4223)  mse 0.0000 (0.0000)  tot 5.5670 (6.8465)  
+epoch = [1/1]loss = {'net': 6.840269327635679, 'acc': 0.5490950226244344}
+
+***Validation***
+udcdr == 0
+Query:sketch; Gallery:real; Generalized:0
+
+Query Emb Dim:torch.Size([9729, 512]); Gallery Emb Dim:torch.Size([24387, 512])
+computing unormed situation
+tensor(0.6753, device='cuda:1') tensor(0.6307, device='cuda:1')
+tensor(0.6766, device='cuda:1') tensor(0.6326, device='cuda:1')
+tensor(0.6763, device='cuda:1') tensor(0.6319, device='cuda:1')
+computing normed situation
+tensor(0.6917, device='cuda:1') tensor(0.6493, device='cuda:1')
+tensor(0.6926, device='cuda:1') tensor(0.6506, device='cuda:1')
+tensor(0.6924, device='cuda:1') tensor(0.6501, device='cuda:1')
+un-norm situation:
+learned: map: 0.6752722263336182, prec: 0.6306973695755005
+11fixed: map: 0.6765801310539246, prec: 0.6325706839561462
+combine: map: 0.6763136982917786, prec: 0.6319241523742676
+norm situation:
+learned: map: 0.6916635036468506, prec: 0.649253785610199
+11fixed: map: 0.6926457285881042, prec: 0.6505622267723083
+combine: map: 0.6924257874488831, prec: 0.650145411491394
+Query:sketch; Gallery:real; Generalized:1
+
+Query Emb Dim:torch.Size([9729, 512]); Gallery Emb Dim:torch.Size([36600, 512])
+computing unormed situation
+tensor(0.6190, device='cuda:1') tensor(0.5802, device='cuda:1')
+tensor(0.6198, device='cuda:1') tensor(0.5818, device='cuda:1')
+tensor(0.6198, device='cuda:1') tensor(0.5814, device='cuda:1')
+computing normed situation
+tensor(0.6160, device='cuda:1') tensor(0.5819, device='cuda:1')
+tensor(0.6166, device='cuda:1') tensor(0.5829, device='cuda:1')
+tensor(0.6165, device='cuda:1') tensor(0.5827, device='cuda:1')
+un-norm situation:
+learned: map: 0.6189908981323242, prec: 0.5801803469657898
+11fixed: map: 0.6197727918624878, prec: 0.5818265080451965
+combine: map: 0.6198223829269409, prec: 0.5813711881637573
+norm situation:
+learned: map: 0.6159611344337463, prec: 0.5819395780563354
+11fixed: map: 0.6165698766708374, prec: 0.5828666687011719
+combine: map: 0.6165422201156616, prec: 0.5827022194862366
+udcdr == 1
+
+Query Emb Dim:torch.Size([1883, 512]); Gallery Emb Dim:torch.Size([5857, 512])
+computing unormed situation
+tensor(0.7616, device='cuda:1') tensor(0.5163, device='cuda:1')
+tensor(0.7640, device='cuda:1') tensor(0.5177, device='cuda:1')
+tensor(0.7632, device='cuda:1') tensor(0.5171, device='cuda:1')
+computing normed situation
+tensor(0.7875, device='cuda:1') tensor(0.5234, device='cuda:1')
+tensor(0.7882, device='cuda:1') tensor(0.5243, device='cuda:1')
+tensor(0.7881, device='cuda:1') tensor(0.5240, device='cuda:1')
+un-norm situation:
+learned: map: 0.7615804076194763, prec: 0.5162506103515625
+11fixed: map: 0.764000415802002, prec: 0.517742931842804
+combine: map: 0.7631977200508118, prec: 0.5171030163764954
+norm situation:
+learned: map: 0.787536084651947, prec: 0.5233908891677856
+11fixed: map: 0.7881924510002136, prec: 0.5243414640426636
+combine: map: 0.7881112694740295, prec: 0.5240175127983093
+Epoch Time:31m14s lr:0.0001000 mAP:0.6165 prec:0.5827
+
+Error: /home/user/Code/DePro_SIGIR/src/algos/depro/log/DomainNet/seen-quickdraw_unseen-sketch_x_real/init.pth file not found
+
+***Training and Validation complete***
