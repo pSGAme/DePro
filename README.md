@@ -6,9 +6,9 @@
 
 ## Requirements
 
-- **Ubuntu** 18.04.5 
+- **Ubuntu**  22.04.4
 - **Nvidia GeForce RTX4090D-24GB**
-- **CUDA**  11.4
+- **CUDA** 12.4
 
 Supports for other platforms and hardwares are possible with no warrant. 
 
@@ -17,7 +17,7 @@ Supports for other platforms and hardwares are possible with no warrant.
 1. Clone this repository：
 
 ``` bash
-git clone https://github.com/fangkaipeng/ProS.git
+git clone https://github.com/pSGAme/DePro.git
 ```
 
 2. Install dependencies：
