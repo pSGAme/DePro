@@ -7,8 +7,9 @@
 - **Ubuntu**  22.04.4
 - **Nvidia GeForce RTX4090D-24GB**
 - **CUDA** 12.4
-
-Supports for other platforms and hardwares are possible with no warrant. 
+- **python** 3.10.4
+- **torch** 1.12.1 py3.10_cuda11.3_cudnn8.3.2_0
+- **torchvision** 0.13.1 py310_cu113
 
 ## Setups
 
