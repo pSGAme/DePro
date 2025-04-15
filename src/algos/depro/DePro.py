@@ -97,4 +97,4 @@ class depro(nn.Module):
         # print(type(state_dict))
         model = clip.build_model(state_dict or model.state_dict())
         # print(model)
-        return model.float().to(self.device)
+        return model.float().to(self.device)  # to float32 :)
