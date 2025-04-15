@@ -265,3 +265,672 @@ Epoch Time:31m14s lr:0.0001000 mAP:0.6165 prec:0.5827
 Error: /home/user/Code/DePro_SIGIR/src/algos/depro/log/DomainNet/seen-quickdraw_unseen-sketch_x_real/init.pth file not found
 
 ***Training and Validation complete***
+================Parameters Settings=================
+Parameters:	Namespace(vptNumTokens=4, text='DCoOp', textNumTokens=1, VL_independent=True, generator_layer=2, domain_specific_trick=False, decouple=True, triplet=True, ln_trick=True, log_name='depro_ln_trick_tri', disable_first_pre_ln=False, second_init='xavier', first_init='xavier', optimizer='adam', l2_reg=0.0, epochs=1, lr=0.0001, momentum=0.9, resume_dict=None, code_path='/home/user/Code/DePro_SIGIR', dataset_path='/data/UCDR/data', dataset='DomainNet', is_eccv_split=1, clip_backbone='ViT-B/32', CLS_NUM_TOKENS=300, DOM_NUM_TOKENS=5, debug_mode=0, dropout=0.5, seen_domain='quickdraw', holdout_domain='sketch', gallery_domain='real', include_auxillary_domains=1, udcdr=0, image_size=224, seed=0, batch_size=60, num_workers=6, early_stop=2, log_interval=100)
+----------------Training Settings-------------------
+lr = 0.0001
+batch_size = 60
+---------------- Universal Domain Prompts Settings ----------------
+visual UDP number = 4
+text prompt-setup = DCoOp
+text UDP number= 1
+UDPs independent? = True
+---------------- Class Prompts Settings ----------------
+Meta-Net used? = True
+Meta-Net layer depth = 2
+---------------- Decouple loss Settings ----------------
+Decouple used? = True
+---------------- Trick&Loss Settings ----------------
+LN Trick used? = True
+vit out_order = 0
+use triplet loss? = True
+==================================================
+======== Training Parameters ========
+text_prompt_learner.ctx
+text_encoder.text_projection
+ln:  text_encoder.transformer.resblocks.0.ln_1.weight
+ln:  text_encoder.transformer.resblocks.0.ln_1.bias
+ln:  text_encoder.transformer.resblocks.0.ln_2.weight
+ln:  text_encoder.transformer.resblocks.0.ln_2.bias
+ln:  text_encoder.transformer.resblocks.1.ln_1.weight
+ln:  text_encoder.transformer.resblocks.1.ln_1.bias
+ln:  text_encoder.transformer.resblocks.1.ln_2.weight
+ln:  text_encoder.transformer.resblocks.1.ln_2.bias
+ln:  text_encoder.transformer.resblocks.2.ln_1.weight
+ln:  text_encoder.transformer.resblocks.2.ln_1.bias
+ln:  text_encoder.transformer.resblocks.2.ln_2.weight
+ln:  text_encoder.transformer.resblocks.2.ln_2.bias
+ln:  text_encoder.transformer.resblocks.3.ln_1.weight
+ln:  text_encoder.transformer.resblocks.3.ln_1.bias
+ln:  text_encoder.transformer.resblocks.3.ln_2.weight
+ln:  text_encoder.transformer.resblocks.3.ln_2.bias
+ln:  text_encoder.transformer.resblocks.4.ln_1.weight
+ln:  text_encoder.transformer.resblocks.4.ln_1.bias
+ln:  text_encoder.transformer.resblocks.4.ln_2.weight
+ln:  text_encoder.transformer.resblocks.4.ln_2.bias
+ln:  text_encoder.transformer.resblocks.5.ln_1.weight
+ln:  text_encoder.transformer.resblocks.5.ln_1.bias
+ln:  text_encoder.transformer.resblocks.5.ln_2.weight
+ln:  text_encoder.transformer.resblocks.5.ln_2.bias
+ln:  text_encoder.transformer.resblocks.6.ln_1.weight
+ln:  text_encoder.transformer.resblocks.6.ln_1.bias
+ln:  text_encoder.transformer.resblocks.6.ln_2.weight
+ln:  text_encoder.transformer.resblocks.6.ln_2.bias
+ln:  text_encoder.transformer.resblocks.7.ln_1.weight
+ln:  text_encoder.transformer.resblocks.7.ln_1.bias
+ln:  text_encoder.transformer.resblocks.7.ln_2.weight
+ln:  text_encoder.transformer.resblocks.7.ln_2.bias
+ln:  text_encoder.transformer.resblocks.8.ln_1.weight
+ln:  text_encoder.transformer.resblocks.8.ln_1.bias
+ln:  text_encoder.transformer.resblocks.8.ln_2.weight
+ln:  text_encoder.transformer.resblocks.8.ln_2.bias
+ln:  text_encoder.transformer.resblocks.9.ln_1.weight
+ln:  text_encoder.transformer.resblocks.9.ln_1.bias
+ln:  text_encoder.transformer.resblocks.9.ln_2.weight
+ln:  text_encoder.transformer.resblocks.9.ln_2.bias
+ln:  text_encoder.transformer.resblocks.10.ln_1.weight
+ln:  text_encoder.transformer.resblocks.10.ln_1.bias
+ln:  text_encoder.transformer.resblocks.10.ln_2.weight
+ln:  text_encoder.transformer.resblocks.10.ln_2.bias
+ln:  text_encoder.transformer.resblocks.11.ln_1.weight
+ln:  text_encoder.transformer.resblocks.11.ln_1.bias
+ln:  text_encoder.transformer.resblocks.11.ln_2.weight
+ln:  text_encoder.transformer.resblocks.11.ln_2.bias
+ln:  text_encoder.ln_final.weight
+ln:  text_encoder.ln_final.bias
+visual_udp_generator.prompt_embeddings
+visual_encoder.class_embedding
+visual_encoder.proj
+visual_encoder.prompt_embeddings
+ln:  visual_encoder.ln_pre.weight
+ln:  visual_encoder.ln_pre.bias
+ln:  visual_encoder.transformer.resblocks.0.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.0.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.0.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.0.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.1.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.1.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.1.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.1.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.2.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.2.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.2.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.2.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.3.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.3.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.3.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.3.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.4.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.4.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.4.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.4.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.5.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.5.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.5.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.5.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.6.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.6.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.6.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.6.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.7.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.7.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.7.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.7.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.8.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.8.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.8.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.8.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.9.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.9.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.9.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.9.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.10.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.10.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.10.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.10.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.11.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.11.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.11.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.11.ln_2.bias
+ln:  visual_encoder.ln_post.weight
+ln:  visual_encoder.ln_post.bias
+visual_encoder.meta_net.proj
+visual_encoder.meta_net.specific_domain_prompts
+visual_encoder.meta_net.specific_class_prompts
+visual_encoder.meta_net.vit.class_embedding
+visual_encoder.meta_net.vit.positional_embedding
+visual_encoder.meta_net.vit.proj
+visual_encoder.meta_net.vit.conv1.weight
+ln:  visual_encoder.meta_net.vit.ln_pre.weight
+ln:  visual_encoder.meta_net.vit.ln_pre.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.in_proj_weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.in_proj_bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.out_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.out_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_1.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_1.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_fc.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_fc.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_2.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_2.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.in_proj_weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.in_proj_bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.out_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.out_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_1.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_1.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_fc.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_fc.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_2.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_2.bias
+ln:  visual_encoder.meta_net.vit.ln_post.weight
+ln:  visual_encoder.meta_net.vit.ln_post.bias
+tot=143781632, train = 18522880
+===============================================
+[Train] Epoch: [1/1][100/3536]  Time 0.392 (0.683)  cls 7.4777 (8.6082)  triplet 1.4759 (1.4595)  mse 0.0001 (0.0001)  tot 8.9535 (10.0678)  
+================Parameters Settings=================
+Parameters:	Namespace(vptNumTokens=4, text='DCoOp', textNumTokens=1, VL_independent=True, generator_layer=2, domain_specific_trick=False, decouple=True, triplet=True, ln_trick=True, log_name='depro_ln_trick_tri', disable_first_pre_ln=False, second_init='xavier', first_init='xavier', optimizer='adam', l2_reg=0.0, epochs=1, lr=0.0001, momentum=0.9, resume_dict=None, code_path='/home/user/Code/DePro_SIGIR', dataset_path='/data/UCDR/data', dataset='DomainNet', is_eccv_split=1, clip_backbone='ViT-B/32', CLS_NUM_TOKENS=300, DOM_NUM_TOKENS=5, debug_mode=0, dropout=0.5, seen_domain='quickdraw', holdout_domain='sketch', gallery_domain='real', include_auxillary_domains=1, udcdr=0, image_size=224, seed=0, batch_size=60, num_workers=6, early_stop=2, log_interval=100)
+----------------Training Settings-------------------
+lr = 0.0001
+batch_size = 60
+---------------- Universal Domain Prompts Settings ----------------
+visual UDP number = 4
+text prompt-setup = DCoOp
+text UDP number= 1
+UDPs independent? = True
+---------------- Class Prompts Settings ----------------
+Meta-Net used? = True
+Meta-Net layer depth = 2
+---------------- Decouple loss Settings ----------------
+Decouple used? = True
+---------------- Trick&Loss Settings ----------------
+LN Trick used? = True
+vit out_order = 0
+use triplet loss? = True
+==================================================
+======== Training Parameters ========
+text_prompt_learner.ctx
+text_encoder.text_projection
+ln:  text_encoder.transformer.resblocks.0.ln_1.weight
+ln:  text_encoder.transformer.resblocks.0.ln_1.bias
+ln:  text_encoder.transformer.resblocks.0.ln_2.weight
+ln:  text_encoder.transformer.resblocks.0.ln_2.bias
+ln:  text_encoder.transformer.resblocks.1.ln_1.weight
+ln:  text_encoder.transformer.resblocks.1.ln_1.bias
+ln:  text_encoder.transformer.resblocks.1.ln_2.weight
+ln:  text_encoder.transformer.resblocks.1.ln_2.bias
+ln:  text_encoder.transformer.resblocks.2.ln_1.weight
+ln:  text_encoder.transformer.resblocks.2.ln_1.bias
+ln:  text_encoder.transformer.resblocks.2.ln_2.weight
+ln:  text_encoder.transformer.resblocks.2.ln_2.bias
+ln:  text_encoder.transformer.resblocks.3.ln_1.weight
+ln:  text_encoder.transformer.resblocks.3.ln_1.bias
+ln:  text_encoder.transformer.resblocks.3.ln_2.weight
+ln:  text_encoder.transformer.resblocks.3.ln_2.bias
+ln:  text_encoder.transformer.resblocks.4.ln_1.weight
+ln:  text_encoder.transformer.resblocks.4.ln_1.bias
+ln:  text_encoder.transformer.resblocks.4.ln_2.weight
+ln:  text_encoder.transformer.resblocks.4.ln_2.bias
+ln:  text_encoder.transformer.resblocks.5.ln_1.weight
+ln:  text_encoder.transformer.resblocks.5.ln_1.bias
+ln:  text_encoder.transformer.resblocks.5.ln_2.weight
+ln:  text_encoder.transformer.resblocks.5.ln_2.bias
+ln:  text_encoder.transformer.resblocks.6.ln_1.weight
+ln:  text_encoder.transformer.resblocks.6.ln_1.bias
+ln:  text_encoder.transformer.resblocks.6.ln_2.weight
+ln:  text_encoder.transformer.resblocks.6.ln_2.bias
+ln:  text_encoder.transformer.resblocks.7.ln_1.weight
+ln:  text_encoder.transformer.resblocks.7.ln_1.bias
+ln:  text_encoder.transformer.resblocks.7.ln_2.weight
+ln:  text_encoder.transformer.resblocks.7.ln_2.bias
+ln:  text_encoder.transformer.resblocks.8.ln_1.weight
+ln:  text_encoder.transformer.resblocks.8.ln_1.bias
+ln:  text_encoder.transformer.resblocks.8.ln_2.weight
+ln:  text_encoder.transformer.resblocks.8.ln_2.bias
+ln:  text_encoder.transformer.resblocks.9.ln_1.weight
+ln:  text_encoder.transformer.resblocks.9.ln_1.bias
+ln:  text_encoder.transformer.resblocks.9.ln_2.weight
+ln:  text_encoder.transformer.resblocks.9.ln_2.bias
+ln:  text_encoder.transformer.resblocks.10.ln_1.weight
+ln:  text_encoder.transformer.resblocks.10.ln_1.bias
+ln:  text_encoder.transformer.resblocks.10.ln_2.weight
+ln:  text_encoder.transformer.resblocks.10.ln_2.bias
+ln:  text_encoder.transformer.resblocks.11.ln_1.weight
+ln:  text_encoder.transformer.resblocks.11.ln_1.bias
+ln:  text_encoder.transformer.resblocks.11.ln_2.weight
+ln:  text_encoder.transformer.resblocks.11.ln_2.bias
+ln:  text_encoder.ln_final.weight
+ln:  text_encoder.ln_final.bias
+visual_udp_generator.prompt_embeddings
+visual_encoder.class_embedding
+visual_encoder.proj
+visual_encoder.prompt_embeddings
+ln:  visual_encoder.ln_pre.weight
+ln:  visual_encoder.ln_pre.bias
+ln:  visual_encoder.transformer.resblocks.0.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.0.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.0.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.0.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.1.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.1.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.1.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.1.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.2.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.2.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.2.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.2.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.3.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.3.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.3.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.3.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.4.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.4.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.4.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.4.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.5.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.5.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.5.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.5.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.6.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.6.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.6.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.6.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.7.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.7.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.7.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.7.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.8.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.8.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.8.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.8.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.9.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.9.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.9.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.9.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.10.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.10.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.10.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.10.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.11.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.11.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.11.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.11.ln_2.bias
+ln:  visual_encoder.ln_post.weight
+ln:  visual_encoder.ln_post.bias
+visual_encoder.meta_net.proj
+visual_encoder.meta_net.specific_domain_prompts
+visual_encoder.meta_net.specific_class_prompts
+visual_encoder.meta_net.vit.class_embedding
+visual_encoder.meta_net.vit.positional_embedding
+visual_encoder.meta_net.vit.proj
+visual_encoder.meta_net.vit.conv1.weight
+ln:  visual_encoder.meta_net.vit.ln_pre.weight
+ln:  visual_encoder.meta_net.vit.ln_pre.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.in_proj_weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.in_proj_bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.out_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.out_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_1.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_1.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_fc.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_fc.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_2.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_2.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.in_proj_weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.in_proj_bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.out_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.out_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_1.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_1.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_fc.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_fc.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_2.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_2.bias
+ln:  visual_encoder.meta_net.vit.ln_post.weight
+ln:  visual_encoder.meta_net.vit.ln_post.bias
+tot=143781632, train = 18522880
+===============================================
+/data/UCDR/data/DomainNet/real/duck/real_100_000356.jpg
+[Train] Epoch: [1/1][100/3536]  Time 0.395 (0.407)  cls 7.4777 (8.6082)  triplet 1.4759 (1.4595)  mse 0.0001 (0.0001)  tot 8.9535 (10.0678)  
+================Parameters Settings=================
+Parameters:	Namespace(vptNumTokens=4, text='DCoOp', textNumTokens=1, VL_independent=True, generator_layer=2, domain_specific_trick=False, decouple=True, triplet=True, ln_trick=True, log_name='depro_ln_trick_tri', disable_first_pre_ln=False, second_init='xavier', first_init='xavier', optimizer='adam', l2_reg=0.0, epochs=1, lr=0.0001, momentum=0.9, resume_dict=None, code_path='/home/user/Code/DePro_SIGIR', dataset_path='/data/UCDR/data', dataset='DomainNet', is_eccv_split=1, clip_backbone='ViT-B/32', CLS_NUM_TOKENS=300, DOM_NUM_TOKENS=5, debug_mode=0, dropout=0.5, seen_domain='quickdraw', holdout_domain='sketch', gallery_domain='real', include_auxillary_domains=1, udcdr=0, image_size=224, seed=0, batch_size=60, num_workers=6, early_stop=2, log_interval=100)
+----------------Training Settings-------------------
+lr = 0.0001
+batch_size = 60
+---------------- Universal Domain Prompts Settings ----------------
+visual UDP number = 4
+text prompt-setup = DCoOp
+text UDP number= 1
+UDPs independent? = True
+---------------- Class Prompts Settings ----------------
+Meta-Net used? = True
+Meta-Net layer depth = 2
+---------------- Decouple loss Settings ----------------
+Decouple used? = True
+---------------- Trick&Loss Settings ----------------
+LN Trick used? = True
+vit out_order = 0
+use triplet loss? = True
+==================================================
+======== Training Parameters ========
+text_prompt_learner.ctx
+text_encoder.text_projection
+ln:  text_encoder.transformer.resblocks.0.ln_1.weight
+ln:  text_encoder.transformer.resblocks.0.ln_1.bias
+ln:  text_encoder.transformer.resblocks.0.ln_2.weight
+ln:  text_encoder.transformer.resblocks.0.ln_2.bias
+ln:  text_encoder.transformer.resblocks.1.ln_1.weight
+ln:  text_encoder.transformer.resblocks.1.ln_1.bias
+ln:  text_encoder.transformer.resblocks.1.ln_2.weight
+ln:  text_encoder.transformer.resblocks.1.ln_2.bias
+ln:  text_encoder.transformer.resblocks.2.ln_1.weight
+ln:  text_encoder.transformer.resblocks.2.ln_1.bias
+ln:  text_encoder.transformer.resblocks.2.ln_2.weight
+ln:  text_encoder.transformer.resblocks.2.ln_2.bias
+ln:  text_encoder.transformer.resblocks.3.ln_1.weight
+ln:  text_encoder.transformer.resblocks.3.ln_1.bias
+ln:  text_encoder.transformer.resblocks.3.ln_2.weight
+ln:  text_encoder.transformer.resblocks.3.ln_2.bias
+ln:  text_encoder.transformer.resblocks.4.ln_1.weight
+ln:  text_encoder.transformer.resblocks.4.ln_1.bias
+ln:  text_encoder.transformer.resblocks.4.ln_2.weight
+ln:  text_encoder.transformer.resblocks.4.ln_2.bias
+ln:  text_encoder.transformer.resblocks.5.ln_1.weight
+ln:  text_encoder.transformer.resblocks.5.ln_1.bias
+ln:  text_encoder.transformer.resblocks.5.ln_2.weight
+ln:  text_encoder.transformer.resblocks.5.ln_2.bias
+ln:  text_encoder.transformer.resblocks.6.ln_1.weight
+ln:  text_encoder.transformer.resblocks.6.ln_1.bias
+ln:  text_encoder.transformer.resblocks.6.ln_2.weight
+ln:  text_encoder.transformer.resblocks.6.ln_2.bias
+ln:  text_encoder.transformer.resblocks.7.ln_1.weight
+ln:  text_encoder.transformer.resblocks.7.ln_1.bias
+ln:  text_encoder.transformer.resblocks.7.ln_2.weight
+ln:  text_encoder.transformer.resblocks.7.ln_2.bias
+ln:  text_encoder.transformer.resblocks.8.ln_1.weight
+ln:  text_encoder.transformer.resblocks.8.ln_1.bias
+ln:  text_encoder.transformer.resblocks.8.ln_2.weight
+ln:  text_encoder.transformer.resblocks.8.ln_2.bias
+ln:  text_encoder.transformer.resblocks.9.ln_1.weight
+ln:  text_encoder.transformer.resblocks.9.ln_1.bias
+ln:  text_encoder.transformer.resblocks.9.ln_2.weight
+ln:  text_encoder.transformer.resblocks.9.ln_2.bias
+ln:  text_encoder.transformer.resblocks.10.ln_1.weight
+ln:  text_encoder.transformer.resblocks.10.ln_1.bias
+ln:  text_encoder.transformer.resblocks.10.ln_2.weight
+ln:  text_encoder.transformer.resblocks.10.ln_2.bias
+ln:  text_encoder.transformer.resblocks.11.ln_1.weight
+ln:  text_encoder.transformer.resblocks.11.ln_1.bias
+ln:  text_encoder.transformer.resblocks.11.ln_2.weight
+ln:  text_encoder.transformer.resblocks.11.ln_2.bias
+ln:  text_encoder.ln_final.weight
+ln:  text_encoder.ln_final.bias
+visual_udp_generator.prompt_embeddings
+visual_encoder.class_embedding
+visual_encoder.proj
+visual_encoder.prompt_embeddings
+ln:  visual_encoder.ln_pre.weight
+ln:  visual_encoder.ln_pre.bias
+ln:  visual_encoder.transformer.resblocks.0.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.0.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.0.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.0.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.1.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.1.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.1.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.1.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.2.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.2.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.2.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.2.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.3.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.3.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.3.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.3.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.4.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.4.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.4.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.4.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.5.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.5.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.5.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.5.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.6.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.6.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.6.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.6.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.7.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.7.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.7.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.7.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.8.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.8.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.8.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.8.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.9.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.9.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.9.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.9.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.10.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.10.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.10.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.10.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.11.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.11.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.11.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.11.ln_2.bias
+ln:  visual_encoder.ln_post.weight
+ln:  visual_encoder.ln_post.bias
+visual_encoder.meta_net.proj
+visual_encoder.meta_net.specific_domain_prompts
+visual_encoder.meta_net.specific_class_prompts
+visual_encoder.meta_net.vit.class_embedding
+visual_encoder.meta_net.vit.positional_embedding
+visual_encoder.meta_net.vit.proj
+visual_encoder.meta_net.vit.conv1.weight
+ln:  visual_encoder.meta_net.vit.ln_pre.weight
+ln:  visual_encoder.meta_net.vit.ln_pre.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.in_proj_weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.in_proj_bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.out_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.out_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_1.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_1.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_fc.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_fc.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_2.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_2.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.in_proj_weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.in_proj_bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.out_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.out_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_1.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_1.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_fc.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_fc.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_2.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_2.bias
+ln:  visual_encoder.meta_net.vit.ln_post.weight
+ln:  visual_encoder.meta_net.vit.ln_post.bias
+tot=143781632, train = 18522880
+===============================================
+[Train] Epoch: [1/1][100/3536]  Time 0.398 (0.408)  cls 7.4777 (8.6082)  triplet 1.4759 (1.4595)  mse 0.0001 (0.0001)  tot 8.9535 (10.0678)  
+================Parameters Settings=================
+Parameters:	Namespace(vptNumTokens=4, text='DCoOp', textNumTokens=1, VL_independent=True, generator_layer=2, domain_specific_trick=False, decouple=True, triplet=True, ln_trick=True, log_name='depro_ln_trick_tri', disable_first_pre_ln=False, second_init='xavier', first_init='xavier', optimizer='adam', l2_reg=0.0, epochs=1, lr=0.0001, momentum=0.9, resume_dict=None, code_path='/home/user/Code/DePro_SIGIR', dataset_path='/data/UCDR/data', dataset='DomainNet', is_eccv_split=1, clip_backbone='ViT-B/32', CLS_NUM_TOKENS=300, DOM_NUM_TOKENS=5, debug_mode=0, dropout=0.5, seen_domain='quickdraw', holdout_domain='sketch', gallery_domain='real', include_auxillary_domains=1, udcdr=0, image_size=224, seed=0, batch_size=60, num_workers=6, early_stop=2, log_interval=100)
+----------------Training Settings-------------------
+lr = 0.0001
+batch_size = 60
+---------------- Universal Domain Prompts Settings ----------------
+visual UDP number = 4
+text prompt-setup = DCoOp
+text UDP number= 1
+UDPs independent? = True
+---------------- Class Prompts Settings ----------------
+Meta-Net used? = True
+Meta-Net layer depth = 2
+---------------- Decouple loss Settings ----------------
+Decouple used? = True
+---------------- Trick&Loss Settings ----------------
+LN Trick used? = True
+vit out_order = 0
+use triplet loss? = True
+==================================================
+======== Training Parameters ========
+text_prompt_learner.ctx
+text_encoder.text_projection
+ln:  text_encoder.transformer.resblocks.0.ln_1.weight
+ln:  text_encoder.transformer.resblocks.0.ln_1.bias
+ln:  text_encoder.transformer.resblocks.0.ln_2.weight
+ln:  text_encoder.transformer.resblocks.0.ln_2.bias
+ln:  text_encoder.transformer.resblocks.1.ln_1.weight
+ln:  text_encoder.transformer.resblocks.1.ln_1.bias
+ln:  text_encoder.transformer.resblocks.1.ln_2.weight
+ln:  text_encoder.transformer.resblocks.1.ln_2.bias
+ln:  text_encoder.transformer.resblocks.2.ln_1.weight
+ln:  text_encoder.transformer.resblocks.2.ln_1.bias
+ln:  text_encoder.transformer.resblocks.2.ln_2.weight
+ln:  text_encoder.transformer.resblocks.2.ln_2.bias
+ln:  text_encoder.transformer.resblocks.3.ln_1.weight
+ln:  text_encoder.transformer.resblocks.3.ln_1.bias
+ln:  text_encoder.transformer.resblocks.3.ln_2.weight
+ln:  text_encoder.transformer.resblocks.3.ln_2.bias
+ln:  text_encoder.transformer.resblocks.4.ln_1.weight
+ln:  text_encoder.transformer.resblocks.4.ln_1.bias
+ln:  text_encoder.transformer.resblocks.4.ln_2.weight
+ln:  text_encoder.transformer.resblocks.4.ln_2.bias
+ln:  text_encoder.transformer.resblocks.5.ln_1.weight
+ln:  text_encoder.transformer.resblocks.5.ln_1.bias
+ln:  text_encoder.transformer.resblocks.5.ln_2.weight
+ln:  text_encoder.transformer.resblocks.5.ln_2.bias
+ln:  text_encoder.transformer.resblocks.6.ln_1.weight
+ln:  text_encoder.transformer.resblocks.6.ln_1.bias
+ln:  text_encoder.transformer.resblocks.6.ln_2.weight
+ln:  text_encoder.transformer.resblocks.6.ln_2.bias
+ln:  text_encoder.transformer.resblocks.7.ln_1.weight
+ln:  text_encoder.transformer.resblocks.7.ln_1.bias
+ln:  text_encoder.transformer.resblocks.7.ln_2.weight
+ln:  text_encoder.transformer.resblocks.7.ln_2.bias
+ln:  text_encoder.transformer.resblocks.8.ln_1.weight
+ln:  text_encoder.transformer.resblocks.8.ln_1.bias
+ln:  text_encoder.transformer.resblocks.8.ln_2.weight
+ln:  text_encoder.transformer.resblocks.8.ln_2.bias
+ln:  text_encoder.transformer.resblocks.9.ln_1.weight
+ln:  text_encoder.transformer.resblocks.9.ln_1.bias
+ln:  text_encoder.transformer.resblocks.9.ln_2.weight
+ln:  text_encoder.transformer.resblocks.9.ln_2.bias
+ln:  text_encoder.transformer.resblocks.10.ln_1.weight
+ln:  text_encoder.transformer.resblocks.10.ln_1.bias
+ln:  text_encoder.transformer.resblocks.10.ln_2.weight
+ln:  text_encoder.transformer.resblocks.10.ln_2.bias
+ln:  text_encoder.transformer.resblocks.11.ln_1.weight
+ln:  text_encoder.transformer.resblocks.11.ln_1.bias
+ln:  text_encoder.transformer.resblocks.11.ln_2.weight
+ln:  text_encoder.transformer.resblocks.11.ln_2.bias
+ln:  text_encoder.ln_final.weight
+ln:  text_encoder.ln_final.bias
+visual_udp_generator.prompt_embeddings
+visual_encoder.class_embedding
+visual_encoder.proj
+visual_encoder.prompt_embeddings
+ln:  visual_encoder.ln_pre.weight
+ln:  visual_encoder.ln_pre.bias
+ln:  visual_encoder.transformer.resblocks.0.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.0.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.0.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.0.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.1.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.1.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.1.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.1.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.2.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.2.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.2.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.2.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.3.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.3.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.3.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.3.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.4.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.4.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.4.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.4.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.5.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.5.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.5.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.5.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.6.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.6.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.6.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.6.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.7.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.7.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.7.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.7.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.8.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.8.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.8.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.8.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.9.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.9.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.9.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.9.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.10.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.10.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.10.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.10.ln_2.bias
+ln:  visual_encoder.transformer.resblocks.11.ln_1.weight
+ln:  visual_encoder.transformer.resblocks.11.ln_1.bias
+ln:  visual_encoder.transformer.resblocks.11.ln_2.weight
+ln:  visual_encoder.transformer.resblocks.11.ln_2.bias
+ln:  visual_encoder.ln_post.weight
+ln:  visual_encoder.ln_post.bias
+visual_encoder.meta_net.proj
+visual_encoder.meta_net.specific_domain_prompts
+visual_encoder.meta_net.specific_class_prompts
+visual_encoder.meta_net.vit.class_embedding
+visual_encoder.meta_net.vit.positional_embedding
+visual_encoder.meta_net.vit.proj
+visual_encoder.meta_net.vit.conv1.weight
+ln:  visual_encoder.meta_net.vit.ln_pre.weight
+ln:  visual_encoder.meta_net.vit.ln_pre.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.in_proj_weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.in_proj_bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.out_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.attn.out_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_1.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_1.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_fc.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_fc.bias
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.0.mlp.c_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_2.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.0.ln_2.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.in_proj_weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.in_proj_bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.out_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.attn.out_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_1.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_1.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_fc.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_fc.bias
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_proj.weight
+visual_encoder.meta_net.vit.transformer.resblocks.1.mlp.c_proj.bias
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_2.weight
+ln:  visual_encoder.meta_net.vit.transformer.resblocks.1.ln_2.bias
+ln:  visual_encoder.meta_net.vit.ln_post.weight
+ln:  visual_encoder.meta_net.vit.ln_post.bias
+tot=143781632, train = 18522880
+===============================================
+[Train] Epoch: [1/1][100/3536]  Time 0.394 (0.408)  cls 7.4777 (8.6082)  triplet 1.4759 (1.4595)  mse 0.0001 (0.0001)  tot 8.9535 (10.0678)  

@@ -1,13 +1,8 @@
-import sys
-import os
 
 from src.algos.depro.DePro_textual import FixedEmbeddings, PromptLearner, DomainPromptLearner, \
     TextEncoder
 from src.algos.depro.DePro_visual import PromptedViT, VisualUDPGenerator
 
-code_path = '/home/user/Code/DePro_SIGIR'  # e.g. '/home/username/ProS'
-sys.path.append(code_path)
-sys.path.append(os.path.join(code_path, "../.."))
 
 import torch
 from clip import clip

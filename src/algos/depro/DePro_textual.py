@@ -1,21 +1,9 @@
-import sys
-import os
-
-code_path = '/home/user/Code/DePro_SIGIR'  # e.g. '/home/username/ProS'
-sys.path.append(code_path)
-sys.path.append(os.path.join(code_path, "../.."))
 import torch
-import torch.nn as nn
 from clip import clip
-from clip.model import CLIP, VisionTransformer
-import math
+from clip.model import CLIP
 import torch.nn as nn
 from PIL import Image
-from functools import reduce
-from operator import mul
-from src.utils import utils
 from clip.simple_tokenizer import SimpleTokenizer as _Tokenizer
-import copy
 
 try:
     from torchvision.transforms import InterpolationMode

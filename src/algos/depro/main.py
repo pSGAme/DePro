@@ -3,9 +3,10 @@ import torch
 import os
 
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-code_path = '/home/user/Code/DePro_SIGIR'  # e.g. '/home/username/ProS'
+code_path = '/home/user/Code/DePro_SIGIR'  # e.g. 'insert your code path here'
 sys.path.append(code_path)
 sys.path.append(os.path.join(code_path, "src"))
+sys.path.append(os.path.join(code_path, "clip"))
 
 from trainer import Trainer
 import argparse
