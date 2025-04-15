@@ -2,7 +2,7 @@ import sys
 from tqdm import tqdm
 import os
 
-code_path = '/home/user/Code/DePro'  # e.g. '/home/username/ProS'
+code_path = '/home/user/Code/DePro_SIGIR'  # e.g. '/home/username/ProS'
 sys.path.append(code_path)
 sys.path.append(os.path.join(code_path, "src"))
 sys.path.append(os.path.join(code_path, "clip"))
