@@ -6,8 +6,8 @@ import glob
 
 def create_trvalte_splits(args):
     _BASE_PATH = args.dataset_path
-    path_sk = os.path.join(args.dataset_path, 'TUBerlin', 'sketches_pros')
-    path_im = os.path.join(args.dataset_path, 'TUBerlin', 'images_pros')
+    path_sk = os.path.join(args.dataset_path, 'TUBerlin', 'sketches')
+    path_im = os.path.join(args.dataset_path, 'TUBerlin', 'images')
 
     tr_classes, va_classes, te_classes, cid_mask, splits_sk = trvalte_per_domain(args, path_sk)
     _, _, _, _, splits_im = trvalte_per_domain(args, path_im)

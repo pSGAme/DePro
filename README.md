@@ -19,6 +19,7 @@ Supports for other platforms and hardwares are possible with no warrant.
 ``` bash
 git clone https://github.com/pSGAme/DePro.git
 ```
+or download the zip file.
 
 2. Install dependencies：
 
@@ -30,16 +31,15 @@ conda activate DePro
 
 ## Data Preparation
 
-1. Download DomainNet, Sketchy and TU-Berlin using scripts in `./ProS/downloads`.
+1. Download DomainNet using scripts in `./DePro/src/data/downloads`.
 
    ``` bash
-   cd ./src/downloads
+   cd ./src/data/downloads
    bash download_domainnet.sh
-   bash download_sketchy.sh
-   bash download_tuberlin.sh
    ```
+2. For Sketchy and TU-berlin, please refer to this [issue](https://github.com/kaipengfang/ProS/issue/3).
 
-2. The directory is expected to be in the structure below:
+3. The directory is expected to be in the structure below:
 
    ```python
    ├── DomainNet
@@ -74,49 +74,44 @@ conda activate DePro
 
 ## Experiments
 
-### CLIP-Full:
+### baseline:
 
 ```bash
-cd ./src/algos/DePro
-bash reproduce_runs.sh
+cd ./src/algos/depro
+
+sh baseline.sh
 ```
 
-## Citation
+### baseline+CPs:
 
-Tips: ArXiv version, as it has not yet been officially accepted by SIGIR2025.
+```bash
+cd ./src/algos/depro
 
-[//]: # (```)
+sh baseline_CPs.sh
+```
 
-[//]: # (@article{ProS,)
+### depro_basic:
 
-[//]: # (  author       = {Kaipeng Fang and)
+```bash
+cd ./src/algos/depro
+sh depro.sh
+```
 
-[//]: # (                  Jingkuan Song and)
+### depro_ln:
 
-[//]: # (                  Lianli Gao and)
+```bash
+cd ./src/algos/depro
+sh depro_ln.sh
+```
 
-[//]: # (                  Pengpeng Zeng and)
+### depro_ln_triplet_loss (all):
 
-[//]: # (                  Zhi{-}Qi Cheng and)
+```bash
+cd ./src/algos/depro
+sh depro_ln_tri.sh
+```
 
-[//]: # (                  Xiyao Li and)
-
-[//]: # (                  Heng Tao Shen},)
-
-[//]: # (  title        = {ProS: Prompting-to-simulate Generalized knowledge for Universal Cross-Domain)
-
-[//]: # (                  Retrieval},)
-
-[//]: # (  journal      = {CoRR},)
-
-[//]: # (  year         = {2023},)
-
-[//]: # (  doi          = {10.48550/ARXIV.2312.12478},)
-
-[//]: # (})
-
-[//]: # (```)
 
 ## Acknowledgements
 
-Our code implementation is based on this [repo](https://github.com/KaiyangZhou/CoOp).
+Our code implementation is based on [CoOp](https://github.com/KaiyangZhou/CoOp) and [ProS](https://github.com/kaipengfang/ProS).

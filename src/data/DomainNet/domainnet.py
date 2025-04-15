@@ -5,9 +5,9 @@ import glob
 
 def create_trvalte_splits(args):
     _BASE_PATH = args.dataset_path
-    tr_classes = np.load(os.path.join(_BASE_PATH, 'DomainNet', 'train_classes.npy')).tolist() # 245
-    va_classes = np.load(os.path.join(_BASE_PATH, 'DomainNet', 'val_classes.npy')).tolist() # 55
-    te_classes = np.load(os.path.join(_BASE_PATH, 'DomainNet', 'test_classes.npy')).tolist() # 45
+    tr_classes = np.load(os.path.join(_BASE_PATH, 'DomainNet', 'train_classes.npy')).tolist()  # 245
+    va_classes = np.load(os.path.join(_BASE_PATH, 'DomainNet', 'val_classes.npy')).tolist()  # 55
+    te_classes = np.load(os.path.join(_BASE_PATH, 'DomainNet', 'test_classes.npy')).tolist()  # 45
     #print(te_classes) # ["class1", "class2", ... "class_n"]
     semantic_vec = np.load(os.path.join(_BASE_PATH, 'DomainNet', 'w2v_domainnet.npy'), allow_pickle=True, encoding='latin1').item()
     #print(semantic_vec) # a dict, an english word to a vector
@@ -26,9 +26,9 @@ def create_trvalte_splits(args):
         if os.path.isdir(os.path.join(args.dataset_path, "DomainNet", f)):
             all_domains.append(f)
 
-    print(all_domains) # ['clipart', 'infograph', 'quickdraw', 'sketch', 'real', 'painting']
-    unseen_domain = args.holdout_domain # painting
-    query_domains_to_train = [args.seen_domain] # 用于训练的域 infograph
+    print(all_domains)  # ['clipart', 'infograph', 'quickdraw', 'sketch', 'real', 'painting']
+    unseen_domain = args.holdout_domain  # painting
+    query_domains_to_train = [args.seen_domain]  # 用于训练的域 infograph
     aux_domains = np.setdiff1d(all_domains, [unseen_domain, args.seen_domain, args.gallery_domain]).tolist() # 筛选出在all_domains中，不在后面这个list中的domain
 
     if args.include_auxillary_domains:

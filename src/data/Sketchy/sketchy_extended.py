@@ -6,8 +6,8 @@ import glob
 
 def create_trvalte_splits(args):
     _BASE_PATH = args.code_path
-    path_sk = os.path.join(args.dataset_path, 'Sketchy', 'sketch_pros')
-    path_im = os.path.join(args.dataset_path, 'Sketchy', 'extended_photo_pros')
+    path_sk = os.path.join(args.dataset_path, 'Sketchy', 'sketch')
+    path_im = os.path.join(args.dataset_path, 'Sketchy', 'extended_photo')
 
     tr_classes, va_classes, te_classes, cid_mask, splits_sk = trvalte_per_domain(args, path_sk, is_eccv_split=bool(args.is_eccv_split))
     _, _, _, _, splits_im = trvalte_per_domain(args, path_im, is_eccv_split=bool(args.is_eccv_split))
