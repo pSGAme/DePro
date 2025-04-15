@@ -45,19 +45,13 @@ class Options:
         parser.add_argument('-ln_trick', '--ln_trick', action="store_true",
                             help="whether to use trick")
 
-
-
-
-
-
-
+        # something else
         parser.add_argument('-disable_first_pre_ln', '--disable_first_pre_ln', action="store_true",
                             help="whether to disable the pre_ln in generator")
         parser.add_argument('-second_init', '--second_init', default="xavier", choices=['xavier', 'randn'],
                             help="initialization methods in clip-visual")
         parser.add_argument('-first_init', '--first_init', default="xavier", choices=['xavier', 'randn'],
                             help="initialization methods in generator")
-
 
         parser.add_argument('-log_name', '--log_name', type=str, default='log',
                             help='log name :)')
