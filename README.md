@@ -37,7 +37,7 @@ conda activate DePro
    cd ./src/data/downloads
    bash download_domainnet.sh
    ```
-2. For Sketchy and TU-berlin, please refer to this [issue](https://github.com/kaipengfang/ProS/issue/3).
+2. For Sketchy and TU-berlin, please refer to this [issue](https://github.com/kaipengfang/ProS/issues/3).
 
 3. The directory is expected to be in the structure below:
 
@@ -115,3 +115,4 @@ sh depro_ln_tri.sh
 ## Acknowledgements
 
 Our code implementation is based on [CoOp](https://github.com/KaiyangZhou/CoOp) and [ProS](https://github.com/kaipengfang/ProS).
+We thank all the authors for releasing their code.
