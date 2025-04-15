@@ -23,9 +23,9 @@ git clone https://github.com/pSGAme/DePro.git
 2. Install dependencies：
 
 ```bash
-cd ./ProS
-conda env create -f ProS.yaml
-conda activate ProS
+cd ./DePro
+conda env create -f DePro.yaml
+conda activate DePro
 ```
 
 ## Data Preparation
@@ -77,30 +77,45 @@ conda activate ProS
 ### CLIP-Full:
 
 ```bash
-cd ./src/algos/ProS
+cd ./src/algos/DePro
 bash reproduce_runs.sh
 ```
 
 ## Citation
 
-Tips: ArXiv version, as it has not yet been officially accepted by CVPR2024.
+Tips: ArXiv version, as it has not yet been officially accepted by SIGIR2025.
 
-```
-@article{ProS,
-  author       = {Kaipeng Fang and
-                  Jingkuan Song and
-                  Lianli Gao and
-                  Pengpeng Zeng and
-                  Zhi{-}Qi Cheng and
-                  Xiyao Li and
-                  Heng Tao Shen},
-  title        = {ProS: Prompting-to-simulate Generalized knowledge for Universal Cross-Domain
-                  Retrieval},
-  journal      = {CoRR},
-  year         = {2023},
-  doi          = {10.48550/ARXIV.2312.12478},
-}
-```
+[//]: # (```)
+
+[//]: # (@article{ProS,)
+
+[//]: # (  author       = {Kaipeng Fang and)
+
+[//]: # (                  Jingkuan Song and)
+
+[//]: # (                  Lianli Gao and)
+
+[//]: # (                  Pengpeng Zeng and)
+
+[//]: # (                  Zhi{-}Qi Cheng and)
+
+[//]: # (                  Xiyao Li and)
+
+[//]: # (                  Heng Tao Shen},)
+
+[//]: # (  title        = {ProS: Prompting-to-simulate Generalized knowledge for Universal Cross-Domain)
+
+[//]: # (                  Retrieval},)
+
+[//]: # (  journal      = {CoRR},)
+
+[//]: # (  year         = {2023},)
+
+[//]: # (  doi          = {10.48550/ARXIV.2312.12478},)
+
+[//]: # (})
+
+[//]: # (```)
 
 ## Acknowledgements
 
