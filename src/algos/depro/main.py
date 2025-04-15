@@ -3,10 +3,12 @@ import torch
 import os
 
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-code_path = '/home/user/Code/DePro_SIGIR'  # e.g. 'insert your code path here'
+code_path = '/home/user/Code/DePro_SIGIR'  # insert your code path here
+data_path = '/data/UCDR/data'  # insert your data path here
 sys.path.append(code_path)
 sys.path.append(os.path.join(code_path, "src"))
 sys.path.append(os.path.join(code_path, "clip"))
+
 
 from trainer import Trainer
 import argparse
@@ -44,10 +46,9 @@ class Options:
                             help="whether to use trick")
 
 
-        parser.add_argument('-log_name', '--log_name', type=str, default='log',
-                            help='log name :)')
 
-        # visual prompt
+
+
 
 
         parser.add_argument('-disable_first_pre_ln', '--disable_first_pre_ln', action="store_true",
@@ -57,8 +58,9 @@ class Options:
         parser.add_argument('-first_init', '--first_init', default="xavier", choices=['xavier', 'randn'],
                             help="initialization methods in generator")
 
-        # text prompt
 
+        parser.add_argument('-log_name', '--log_name', type=str, default='log',
+                            help='log name :)')
         # optimizer
         parser.add_argument('-opt', '--optimizer', type=str, choices=['sgd', 'adam'], default='adam')
         parser.add_argument('-l2', '--l2_reg', default=0.0, type=float, help='L2 Weight Decay for optimizer')
@@ -70,9 +72,7 @@ class Options:
         parser.add_argument('-resume', '--resume_dict', type=str, help='checkpoint file to resume training from')
 
         # data_root
-        code_path = '/home/user/Code/DePro_SIGIR'
         parser.add_argument('-code_path', '--code_path', default=code_path, type=str, help='code path of ProS')
-        data_path = '/data/UCDR/data'
         parser.add_argument('-dataset_path', '--dataset_path', default=data_path, type=str,
                             help='Path of three datasets')
 
