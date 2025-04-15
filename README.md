@@ -1,8 +1,6 @@
 # DePro:Domain Ensemble using Decoupled Prompts for Universal Cross-Domain Retrieval [SIGIR 2025]
 
 > Official github repository for **DePro:Domain Ensemble using Decoupled Prompts for Universal Cross-Domain Retrieval**. 
-> 
-> Please refer to [paper link](https://arxiv.org/abs/2312.12478) for detailed information.
 
 ## Requirements
 
